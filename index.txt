@@ -295,3 +295,9 @@ aria-label = submit
 aria-label = back to top
 
 <ion-icon name="caret-up"></ion-icon>
+
+
+
+
+admin Sign
+calendar photo

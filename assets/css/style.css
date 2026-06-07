@@ -365,7 +365,7 @@ HEADER
     font-weight: var(--fw-800);
 }
 
-.header-action {
+.header-actions {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -841,7 +841,7 @@ BLOG
     margin-block: 50px 60px;
 }
 
-.bolg-list {
+.blog-list {
     display: grid;
     gap: 50px;
 }
@@ -1116,10 +1116,10 @@ BACK TO TOP
     z-index: 0;
     transition: var(--transition);
     opacity: 0;
-    visibility: visible;
+    visibility: hidden;
 }
 
-.back-to-top:active {
+.back-to-top.active {
     opacity: 1;
     visibility: visible;
     transform: translateY(-10px);
@@ -1256,7 +1256,7 @@ responsive for larger then 768px screen
     BLOG
     **/
 
-    .bolg-list {grid-template-columns: 1fr 1fr; }
+    .blog-list {grid-template-columns: 1fr 1fr; }
 
 
     /**
@@ -1302,7 +1302,7 @@ responsive for larger then 768px screen
     BACK TO TOP
     **/
 
-    .back-top-btn {
+    .back-to-top {
         bottom: 50px;
         right: 45px;
     }
@@ -1354,6 +1354,7 @@ HEADER
 
 .countdown-text .span {
     display: inline-block;
+    background-color: var(--marigold);
     color: var(--xiketic);
     font-size: 1.8rem;
     font-weight: var(--fw-700);
@@ -1379,7 +1380,7 @@ HEADER
 
 .header .social-link {
     background-color: var(--jet);
-    columns: var(--marigold);
+    color: var(--marigold);
     font-size: var(--fs-9);
     padding: 8px 10px;
 }
@@ -1486,7 +1487,7 @@ FEATURE GAME
 BLOG
 **/
 
-.bolg-list {
+.blog-list {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
